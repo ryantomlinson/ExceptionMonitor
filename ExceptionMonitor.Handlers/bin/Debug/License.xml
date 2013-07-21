@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<license id="d61c51a1-9067-49ac-9bb3-2af1c94240cd" expiration="9999-12-31T23:59:59.9999999" type="Standard" LicenseVersion="3.3" LicenseType="Basic8" MaxMessageThroughputPerSecond="8" WorkerThreads="1" AllowedNumberOfWorkerNodes="2" ProductType="386975 - Basic 8" LicenseQuantity="1">
+  <name>tombola Ltd</name>
+  <Signature xmlns="http://www.w3.org/2000/09/xmldsig#">
+    <SignedInfo>
+      <CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+      <SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+      <Reference URI="">
+        <Transforms>
+          <Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+        </Transforms>
+        <DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <DigestValue>V2IWx3oBEzDfOEZOi6nJCKbuRCk=</DigestValue>
+      </Reference>
+    </SignedInfo>
+    <SignatureValue>MPwNMUj5uCDL8xPD/hMKcC5qoSdELryiskeWO4riqGElikcoqxD0ca38Xy3un3OJlkQgXU4B0YOvAGRGFPLmnmv8jxZaFsJVoDEsUbM9IUaoHeaOPh75cmbT/J71pw3yhpNaWS2HO3xS/XOoGMfZimRs+j3MAjwA8zDtEiHO8Cc=</SignatureValue>
+  </Signature>
+</license>

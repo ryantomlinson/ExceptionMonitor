@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+	<metadata>
+		<id>ExceptionMonitor.Domain</id>
+		<version>1.0.0</version>
+		<authors>Ryan Tomlinson</authors>
+		<description>This library is used for defining message contracts for NServiceBus analytics</description>
+		<tags>analytics message contracts</tags>
+    <dependencies>
+      <group>
+        <dependency id="NServiceBus.Interfaces" version="3.3.2" />
+      </group>
+    </dependencies>
+	</metadata>
+  <files>
+    <file src="ExceptionMonitor.domain\bin\Release\ExceptionMonitor.Domain.dll" target="lib" />
+  </files>
+</package>

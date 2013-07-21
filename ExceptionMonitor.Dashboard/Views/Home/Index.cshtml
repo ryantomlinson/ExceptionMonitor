@@ -1,0 +1,79 @@
+﻿@model dynamic
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/jquery.signalR-1.0.0-alpha2.js"></script>
+    <script type="text/javascript" src="~/signalr/hubs"></script>
+    
+    @Scripts.Render("~/Scripts/Hub/Exception.js")
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var exception = new Exception();
+           
+        });
+    </script>
+}
+
+@section main
+{
+    <div class="row-fluid">
+	    <div class="span4">
+		    <div class="country-span">
+			    <img src="~/Content/images/flags/64/UK.png"/>
+			    <h1>UK</h1>
+			    <div class="country-controls">
+				    <a id="uk-paused" class="btn btn-small" href="#"><i class="icon-pause"></i>Pause</a>
+			    </div>
+		    </div>
+		    <div id="uk-pending-notification" class="pending-notifications">
+			    <span class="pending-count">0</span> new exceptions pending
+		    </div>
+		    <ul class="exception-list-hidden" id="uk-list-hidden"></ul>
+		    <ul class="exception-list" id="uk-list"></ul>
+	    </div>
+
+	    <div class="span4">
+		    <div class="country-span">
+			    <img src="~/Content/images/flags/64/Spain.png"/>
+			    <h1>Spain</h1>
+			    <div class="country-controls">
+				    <a id="spain-paused" class="btn btn-small" href="#"><i class="icon-pause"></i>Pause</a>
+			    </div>
+		    </div>
+		    <div id="spain-pending-notification" class="pending-notifications">
+			    <span class="pending-count">0</span> new exceptions pending
+		    </div>
+		    <ul class="exception-list-hidden" id="spain-list-hidden"></ul>
+		    <ul class="exception-list" id="spain-list"></ul>
+	    </div>
+
+        <div class="span4">
+            <div class="country-span">
+                <img src="~/Content/images/flags/64/Italy.png"/>
+                <h1>Italy</h1>
+                <div class="country-controls">
+                    <a id="italy-paused" class="btn btn-small" href="#"><i class="icon-pause"></i>Pause</a>
+                </div>
+            </div>
+            <div id="italy-pending-notification" class="pending-notifications">
+                <span class="pending-count">0</span> new exceptions pending
+            </div>
+            <ul class="exception-list-hidden" id="italy-list-hidden"></ul>
+            <ul class="exception-list" id="italy-list"></ul>
+        </div>
+    </div>
+    
+    <audio id="unhandled_sound">
+        <b>Your browser does not support the audio tag.</b>
+        <source src="@Url.Content("~/Content/sounds/sadtrombone.ogg")" type="audio/ogg"/>
+    </audio>
+    
+    <audio id="software_sound">
+        <b>Your browser does not support the audio tag.</b>
+        <source src="@Url.Content("~/Content/sounds/familyfortunes.ogg")" type="audio/ogg"/>
+    </audio>
+
+}
+
+
+
